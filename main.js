@@ -24,3 +24,10 @@ addForm.addEventListener('submit', e => {
     }
     
 });
+
+//delete todos
+list.addEventListener('click', e => {
+    if(e.target.classList.contains('delete')) {
+        e.target.parentElement.remove();
+    }
+})
